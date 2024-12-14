@@ -30,7 +30,12 @@
             data-bs-target="#navbarNav"
           >
             <i class="bi bi-telephone-fill"></i>
-            <span class="d-none d-sm-inline">Заказать звонок</span>
+            <span
+              class="d-none d-sm-inline"
+              data-bs-toggle="modal"
+              data-bs-target="#orderCall"
+              >Заказать звонок</span
+            >
           </button>
           <button
             class="navbar-toggler"
@@ -82,8 +87,10 @@
           loop
           class="w-100 h-100 position-absolute object-fit-cover"
         >
-          <!-- https://gitrequests.github.io/interview-bootstrap/assets/video.mp4" -->
-          <source src="" type="video/mp4" />
+          <source
+            src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4"
+            type="video/mp4"
+          />
           Ваш браузер не поддерживает видео.
         </video>
         <div class="bg-dark position-absolute w-100 vh-100 opacity-50"></div>
@@ -105,6 +112,8 @@
             <button
               class="btn btn-secondary px-5 py-3 mb-3 mb-sm-0"
               type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#orderCall"
             >
               Заказать звонок
             </button>
@@ -123,8 +132,11 @@
       <div class="row mx-auto w-75 mb-5">
         <div class="col-12 col-sm-6 col-md-4 mb-4">
           <div class="card shadow-sm">
-            <!-- https://gitrequests.github.io/interview-bootstrap/assets/image.webp -->
-            <img src="" alt="img" class="card-img-top" />
+            <img
+              src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp"
+              alt="img"
+              class="card-img-top"
+            />
             <div class="card-body">
               <h5 class="card-title">Товар 1</h5>
               <p class="card-text">
@@ -146,14 +158,51 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
-            <!-- https://gitrequests.github.io/interview-bootstrap/assets/image.webp -->
-            <img src="" alt="img" class="card-img-top" />
+            <img
+              src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp"
+              alt="img"
+              class="card-img-top"
+            />
             <div class="card-body flex-grow-1">
               <h5 class="card-title">Товар 1</h5>
             </div>
             <div class="card-footer">
               <button class="btn btn-primary w-100">Купить</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="orderCall"
+      tabindex="-1"
+      aria-labelledby="orderCallLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="orderCallLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary px-4">
+              Save changes
+            </button>
           </div>
         </div>
       </div>
