@@ -3,3 +3,7 @@ $btn-border-radius: 0px 45px !default;
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 $bootstrap-icons-font-dir: "~bootstrap-icons/font/fonts";
 @import "~bootstrap-icons/font/bootstrap-icons.scss";
+
+.btn-secondary {
+  background-color: #7143c2;
+}
